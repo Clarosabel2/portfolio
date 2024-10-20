@@ -8,7 +8,7 @@ import { proyects } from "../data"
 export default function Main(){
     return(
         <main className="w-full h-auto relative flex justify-center items-center flex-col">
-            <section className="w-[70%] flex flex-col md:flex-row justify-center items-center gap-10 h-screen bg-red-300">
+            <section className="w-[70%] flex flex-col md:flex-row justify-center items-center gap-10 h-screen ">
                 <article className='lg:size-1/2 flex items-center'>
                     <Image src="/dev-fullstack.png" alt='dev' width={400} height={500} className='object-cover w-[400px] h-auto' layout='resposive'/>
                 </article>
