@@ -7,7 +7,7 @@ import { FiGithub } from "react-icons/fi";
 import { MdOutlineWebAsset } from "react-icons/md";
 import { useInView } from 'react-intersection-observer';
 import Item from "./Item";
-import { Project, Technology } from "@/data";
+import { Project} from "@/data";
 
 interface CardProps{
     proyect:Project;
@@ -46,7 +46,7 @@ export default function Card({proyect}:CardProps){
                 <h1 className="text-3xl"><strong>{proyect.name}</strong></h1>
                 <div className="flex gap-2">
                     {proyect.technologies.map((i)=>(
-                        <Item name={i.name} color={i.color} icon={i.icon}/>
+                        <Item key={i.name} name={i.name} color={i.color} icon={i.icon}/>
                     ))}
                 </div>
                 <p>{proyect.description}</p>

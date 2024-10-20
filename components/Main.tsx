@@ -26,7 +26,7 @@ export default function Main(){
                 <h1 className='text-4xl pb-6 flex gap-2'><HiCode/>Proyectos</h1>
                 <article className='w-full h-auto gap-10 flex flex-col items-center'>
                     {proyects.map((p) => (
-                        <Card proyect={p}/>
+                        <Card key={p.name} proyect={p}/>
                     ))}
                 </article>
             </section>
