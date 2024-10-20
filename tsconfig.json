@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/icons/JavaIcon.tsx", "components/icons/JavascriptIcon.tsx", "components/icons/SpringIcon.tsx", "components/icons/TailwindIcon.tsx", "components/icons/CssIcon.tsx", "components/icons/HtmlIcon.tsx"],
   "exclude": ["node_modules"]
 }

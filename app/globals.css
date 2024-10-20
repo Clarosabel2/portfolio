@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #545457;
+  border-radius: 10px;
+  border: 3px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #505264;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2b2d50;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.social-item {
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  cursor: pointer;
+}
+.social-item:hover {
+  box-shadow: 0px 5px 1px #858585;
+  transform: translateY(-2.5px);
+}
+.social-item:active {
+  box-shadow: none;
+  transform: none;
+}
+
+.card-item {
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+.card-item:hover {
+  box-shadow: 0px 5px 10px #000;
+}
+.card-item:active {
+  box-shadow: none;
 }
